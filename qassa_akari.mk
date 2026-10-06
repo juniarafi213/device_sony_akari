@@ -8,6 +8,10 @@
 # Inherit from akari device
 $(call inherit-product, device/sony/akari/device.mk)
 
+# Target architectures & configs for QASSA
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit some common QASSA stuff.
 $(call inherit-product, vendor/qassa/config/common_full_phone.mk)
 
